@@ -9,10 +9,10 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
-#! set path
-set PATH ~/.npm-global/bin ~/anaconda3/bin $PATH
-set PYTHONPATH ~/WORK/_lib__ $PYTHONPATH
-
 # Conda initialize
 eval ~/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 conda activate main
+
+#! set path
+set -xg PATH $HOME/.npm-global/bin $HOME/anaconda3/bin $PATH
+set -xg PYTHONPATH $HOME/WORK/__lib__
