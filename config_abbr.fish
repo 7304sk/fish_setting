@@ -15,10 +15,10 @@ abbr -a sfcf    source ~/.config/fish/config.fish
 abbr -a g       git
 abbr -a gi      git init
 abbr -a ga      git add .
-abbr -a gc      git commit -m
+abbr -a gc      git commit -m "update"
 abbr -a gp      git push origin
 abbr -a gf      git fetch --prune
-abbr -a gpl     git pull
+abbr -a gpl     git pull origin
 abbr -a gm      git merge
 abbr -a grp     git reset --hard
 abbr -a gck     git checkout
