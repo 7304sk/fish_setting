@@ -15,4 +15,4 @@ alias rm='rm -i'
 
 #! activate anaconda
 source (conda info --root)/etc/fish/conf.d/conda.fish
-conda activate fig
+conda activate main
