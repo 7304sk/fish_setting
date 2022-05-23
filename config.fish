@@ -13,6 +13,6 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
-#! activate anaconda
-source (conda info --root)/etc/fish/conf.d/conda.fish
+# Conda initialize
+eval ~/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 conda activate main
