@@ -1,0 +1,8 @@
+*
+
+# ---------------------------
+# White list
+
+!/.gitignore
+!/config.fish
+!/config_abbr.fish
