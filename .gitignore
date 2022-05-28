@@ -5,4 +5,4 @@
 
 !/.gitignore
 !/config.fish
-!/config_abbr.fish
+!/config_*.fish

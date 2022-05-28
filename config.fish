@@ -1,6 +1,7 @@
 #! include abbr settings
 for a in (abbr --list); abbr --erase $a; end
 source ~/.config/fish/config_abbr.fish
+source ~/.config/fish/config_functions.fish
 
 #! alias
 alias vi='nvim'

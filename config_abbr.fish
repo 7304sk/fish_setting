@@ -15,12 +15,12 @@ abbr -a sfcf    source ~/.config/fish/config.fish
 abbr -a g       git
 abbr -a gi      git init
 abbr -a ga      git add .
-abbr -a gc      git commit -m "update"
+abbr -a gc      git commit -m
 abbr -a gp      git push origin
 abbr -a gf      git fetch --prune
 abbr -a gpl     git pull origin
 abbr -a gm      git merge
-abbr -a grp     git reset --hard
+abbr -a gr      git reset --hard
 abbr -a gck     git checkout
 abbr -a gckb    git checkout -b
 abbr -a gb      git branch
@@ -31,5 +31,6 @@ abbr -a gt      git tag
 abbr -a py      python
 abbr -a work    cd ~/WORK/
 abbr -a e       exit
+abbr -a bz      tar cvjf o i 
 abbr -a unbz    tar xvjf
-abbr -a d       dig any +noall +answer
+abbr -a dig     dig any +noall +answer
