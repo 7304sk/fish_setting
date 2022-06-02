@@ -27,6 +27,9 @@ abbr -a gb      git branch
 abbr -a gcy     git cherry-pick
 abbr -a gd      git diff --color-words --word-diff
 abbr -a gs      git status
+abbr -a gss     git stash save
+abbr -a gsp     git stash pop stash@{0}
+abbr -a gsl     git stash list
 abbr -a gt      git tag
 abbr -a py      python
 abbr -a work    cd ~/WORK/
