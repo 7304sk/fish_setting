@@ -10,14 +10,16 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
-#! set path
-set -xg PATH $HOME/anaconda3/bin $PATH
-set -xg PATH /opt/anaconda3/bin /opt/homebrew/opt/coreutils/libexec/gnubin /opt/homebrew/bin $PATH
-set -xg PYTHONPATH $HOME/WORK/__lib__
+if test (uname -s) = "Darwin"
+    #! for mac OS.
+    eval /opt/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+    set -xg PATH /opt/homebrew/opt/coreutils/libexec/gnubin /opt/homebrew/bin $PATH
+else
+    #! for other OS(Linux).
+    eval ~/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+    set -xg PATH $HOME/.npm-global/bin $PATH
+end
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-eval /opt/anaconda3/bin/conda "shell.fish" "hook" $argv | source
-# <<< conda initialize <<<
-
+#! initialize Python
+set -xg PYTHONPATH $HOME/WORK/__lib__ $PYTHONPATH
 conda activate main
