@@ -11,6 +11,7 @@ alias mv='mv -i'
 alias rm='rm -i'
 
 #! set path
+set -xg PATH $HOME/anaconda3/bin $PATH
 set -xg PATH /opt/anaconda3/bin /opt/homebrew/opt/coreutils/libexec/gnubin /opt/homebrew/bin $PATH
 set -xg PYTHONPATH $HOME/WORK/__lib__
 
